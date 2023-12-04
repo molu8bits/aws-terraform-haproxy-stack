@@ -10,7 +10,7 @@ Deploy Haproxy configuration in AWS cloud using Terraform
 - [X] haproxy terraform module
 - [X] web terraform module
 - [ ] monitoring terraform module (Grafana | Loki) - Docker Compose?
-- [ ] NLB Logging
+- [-] NLB Logging - TLS only
 - [ ] Haproxy SPOF - Coraza Firewall
 - [ ] Diagram as Code
 - [ ] Deployment scripts (AWS Deploy | Github Actions | Jenkins)
@@ -21,3 +21,13 @@ Deploy Haproxy configuration in AWS cloud using Terraform
 ## Network Diagram
 
 ![Network diagram](network-diagram.png)
+
+## Github Actions deployment
+
+Terraform Cloud:
+
+- add token and save as TF_API_TOKEN
+
+## Pre-requisites
+
+Existing SSH Keypair "OEMLab.pem"
