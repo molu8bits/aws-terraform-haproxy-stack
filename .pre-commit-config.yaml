@@ -1,0 +1,28 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+
+  - repo: https://github.com/gruntwork-io/pre-commit
+    rev: v0.1.12 # Get the latest from: https://github.com/gruntwork-io/pre-commit/releases
+    hooks:
+      - id: terraform-fmt
+      - id: shellcheck
+      - id: tflint
+
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.3.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+      - id: check-executables-have-shebangs
+      - id: check-shebang-scripts-are-executable
+
+      - id: check-statements
+      - id: check-merge-conflicts
+      - id: check-executables-have-shebangs
+      - id: check-byte-order-marker
+      - id: check-line-ending
+      - id: check-end-of-file-fixer
