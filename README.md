@@ -9,6 +9,7 @@ Deploy Haproxy configuration in AWS cloud using Terraform
 - [X] network terraform module
 - [X] haproxy terraform module
 - [X] web terraform module
+- [X] AWS NLB module
 - [ ] monitoring terraform module (Grafana | Loki) - Docker Compose?
 - [ ] Haproxy SPOE + Coraza WAF SPOA
 - [ ] Diagram as Code

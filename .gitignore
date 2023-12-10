@@ -39,3 +39,4 @@ rover.zip
 deployment/TEMP/**
 **/*.OLD
 **/.terraform.lock.hcl
+deployment-small/*

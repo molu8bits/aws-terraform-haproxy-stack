@@ -11,8 +11,8 @@ resource "aws_subnet" "subnet-1" {
 }
 
 resource "aws_subnet" "subnet-2" {
-  vpc_id                  = aws_vpc.vpc.id
-  cidr_block              = var.cidr_subnet_2
+  vpc_id     = aws_vpc.vpc.id
+  cidr_block = var.cidr_subnet_2
   # Must be true to allow install packages
   map_public_ip_on_launch = true
   tags                    = merge(var.tags, { "Name" = var.subnet_name_2 })

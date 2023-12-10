@@ -18,10 +18,10 @@ data "template_file" "webserver" {
 }
 
 resource "aws_instance" "ec2-vm" {
-  depends_on = [ aws_eip.one ]
-  ami           = var.ami
-  instance_type = var.instance_type
-  key_name      = var.key_name
+  depends_on           = [aws_eip.one]
+  ami                  = var.ami
+  instance_type        = var.instance_type
+  key_name             = var.key_name
   iam_instance_profile = var.iam-instance-profile
   tags                 = merge(var.tags, { "Name" = var.vm_name })
   network_interface {
