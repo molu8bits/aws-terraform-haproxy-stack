@@ -10,8 +10,7 @@ Deploy Haproxy configuration in AWS cloud using Terraform
 - [X] haproxy terraform module
 - [X] web terraform module
 - [ ] monitoring terraform module (Grafana | Loki) - Docker Compose?
-- [-] NLB Logging - TLS only
-- [ ] Haproxy SPOF - Coraza Firewall
+- [ ] Haproxy SPOE + Coraza WAF SPOA
 - [ ] Diagram as Code
 - [ ] Deployment scripts (AWS Deploy | Github Actions | Jenkins)
 - [ ] traffic generator terraform module
@@ -30,4 +29,8 @@ Terraform Cloud:
 
 ## Pre-requisites
 
-Existing SSH Keypair "OEMLab.pem"
+Existing SSH Key pair "aws_keypair" - e.g.:
+
+```console
+aws --region=eu-west-1 create-key-pai --key-name aws_keypair --query 'KeyMaterial' --output text > aws_keypair.pem
+```
